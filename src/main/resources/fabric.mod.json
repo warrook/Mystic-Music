@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "mysticmusic",
+  "version": "${version}",
+  "name": "Mysticmusic",
+  "description": "Music, but make it magic",
+  "authors": [
+    "warrook"
+  ],
+  "contact": {
+    "repo": "https://github.com/warrook/Mystic-Music.git"
+  },
+  "license": "MIT",
+  "icon": "assets/mysticmusic/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "warrook.mysticmusic.client.MysticMusicClient"
+    ],
+    "main": [
+      "warrook.mysticmusic.MysticMusic"
+    ]
+  },
+  "mixins": [
+    "mysticmusic.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.2",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
